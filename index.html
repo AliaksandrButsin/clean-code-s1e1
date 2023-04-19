@@ -1,9 +1,9 @@
 <html>
-  <HEAD>
+  <head>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
     <title>Todo App</title>
-  </HEAD>
+  </head>
   <body>
     <div class="aaa">
       <img src="./eisenhower-matrix.jpg">
@@ -12,21 +12,17 @@
       </a>
     </div>
     <div class="centered-main-page-element">
-      <p id='topSectionForAddingElementToList'>
+      <p>
         <label for="new-task">
           Add Item
         </label>
         <div class="task-row-wrapper">
           <input id='new-task'class="task" type="text">
-          <button>
-            Add
-          </button>
+          <button>Add</button>
         </div>
       </p>
-      <h3>
-        Todo
-      </h3>
-      <ul id='incompleteTasks'>
+      <h3>Todo</h3>
+      <ul id='incomplete_tasks'>
         <li>
           <input type='checkbox'>
           <label class="task">
@@ -40,12 +36,12 @@
             <img src="./remove.svg">
           </button>
         </li>
-        <li class="editMode">
+        <li class="edit_mode">
           <input type="checkbox">
           <label class="task">
             Go Shopping
           </label>
-          <input type="text" value="Go Shopping" class="task">
+          <input type="text" placeholder="Go Shopping" class="task">
             <button class='edit'>
               Save
             </button>
@@ -54,9 +50,7 @@
             </button>
         </li>
       </ul>
-      <h3>
-        Completed
-      </h3>
+      <h3>Completed</h3>
       <ul id="completed-tasks">
         <li>
           <input type="checkbox" checked>
@@ -73,6 +67,6 @@
         </li>
       </ul>
     </div>
-    <script type="text/javascript" SRC="app.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
